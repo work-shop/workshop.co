@@ -1,0 +1,42 @@
+
+/********** $ANIMATIONS *********/
+
+@mixin animation($name: animation, $duration: 2s, $easing: ease, $delay: 0s, $iteration: 1)
+{	
+	animation: $name $duration $easing $delay $iteration;
+	-ms-animation: $name $duration $easing $delay $iteration;
+	-webkit-animation: $name $duration $easing $delay $iteration;
+	-o-animation:move $name $duration $easing $delay $iteration;
+	-moz-animation:move $name $duration $easing $delay $iteration;
+	animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;	
+}
+
+
+#home-mission .flex-active-slide{
+	//@include animation(scale, 8s, linear, 0s, infinite);
+}	
+
+#home-mission .block-background{
+	@include animation(scale, 20s, linear, 0s, infinite);
+}	
+
+#home-mission .slides li{
+	-webkit-transform: scale(1.05);  		
+}
+
+
+@-webkit-keyframes scale{
+  0% {
+	-webkit-transform: scale(1.0);
+	}
+  50% {
+	-webkit-transform: scale(1.05);  	
+  }
+  100% {
+	-webkit-transform: scale(1.0);  	
+  }	
+	  
+}
+
+
