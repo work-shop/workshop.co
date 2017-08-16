@@ -790,7 +790,7 @@ body.modal-open {
 #headerfix {
   height: 90px; }
 
-.home #headerfix, .page-id-8 #headerfix, .single #headerfix, .page #headerfix {
+.home #headerfix, .single #headerfix {
   display: none; }
 
 .home #header #logo {
@@ -1885,5 +1885,8 @@ label {
         left: -5px; }
     .flexslider-website .flex-control-nav {
       bottom: -30px; } }
+#page-subscribe-form {
+  width: 300px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

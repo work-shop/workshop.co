@@ -31,15 +31,16 @@
 <section class="block bg-light padded-less">
 	<div class="container">
 		<div class="row">
-		
 				
 				<div class="col-sm-3">
 					<address>
 						<h3 class="bold uppercase m30 brand">Work-Shop</h3>				
 						<h4><a href="<?php bloginfo('url'); ?>/projects" target="_blank" class="dark">Projects</a></h4>	
 						<h4><a href="<?php bloginfo('url'); ?>/about" target="_blank" class="dark">About</a></h4>				
-						<h4 class="hidden"><a href="<?php bloginfo('url'); ?>/jobs" target="_blank" class="dark">Jobs</a></h4>				
-						<h4 class="hidden"><a href="<?php bloginfo('url'); ?>/current" target="_blank" class="dark">Current</a></h4>													
+						<h4><a href="http://facebook.com/workshopri" target="_blank" class="dark">Facebook</a></h4>				
+						<h4><a href="http://instagram.com/workshop.design.studio" target="_blank" class="dark">Instagram</a></h4>
+						<h4 class="hidden"><a href="<?php bloginfo('url'); ?>/jobs" target="_blank" class="dark">Jobs</a></h4>
+						<h4 class="hidden"><a href="<?php bloginfo('url'); ?>/current" target="_blank" class="dark">Current</a></h4>
 					</address>	
 				</div>
 		
@@ -49,7 +50,6 @@
 						
 						<h4><a href="mailto:info@workshopri.com" target="_blank" class="dark">info@workshopri.com</a></h4>
 						<h4>p. 440-915-2393</h4>
-						<h4>f. 401-274-1913</h4>						
 					</address>	
 				</div>
 			
@@ -67,7 +67,7 @@
 						<h3 class="uppercase bold m30 brand">Shop</h3>
 											
 						<h4 class="brand">We've moved!</h4>					
-						<h4>160 Narragansett Ave</h4>
+						<h4>160 Narragansett Ave, Unit 2</h4>
 						<h4>Providence, RI 02907</h4>						
 					</address>					
 				</div>			

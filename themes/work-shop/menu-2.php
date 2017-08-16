@@ -24,7 +24,7 @@
 				
 				
 				<div class="col-sm-4 col-sm-offset-1 menu-about hidden-xs">
-					<h2 class="m30">We're an interdisciplinary design studio comprised of designers, makers, thinkers, and creative technologists. </h2>
+					<h2 class="m30">We're an multidisciplinary design studio comprised of designers, makers, thinkers, and creative technologists. </h2>
 
 					<ul class="">
 						<li><a href="<?php bloginfo('url'); ?>/about" class=" h2 bold">About</a></li>
