@@ -11,11 +11,16 @@
 	<section id="home-introduction" class="home-introduction introduction block full">	
 	
 		<div class="tagline-container">
-			<h1 class="centered tagline">
+			<h1 class="centered tagline hidden">
 				We design and make<br/>
 				spaces, furniture, objects<br/>
 				websites, and apps.
 			</h1>
+			<h1 class="centered tagline">
+				We design brands, digital,<br/>
+				interiors, furniture, experiences,<br/>
+				and everything in between.
+			</h1>			
 			<div class="row hidden">
 				<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 slide-right">
 					<a href="<?php bloginfo('url');?>/apprenticeship" class="button bold centered margin uppercase">2015 Summer Apprenticeship Program</a>
