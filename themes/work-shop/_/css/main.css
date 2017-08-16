@@ -1449,7 +1449,8 @@ body.modal-open {
   margin-left: 5px; }
 
 .gform_confirmation_message {
-  font-size: 30px; }
+  font-size: 30px;
+  text-align: center; }
   .gform_confirmation_message h1 {
     font-size: 30px;
     color: white;
@@ -1888,5 +1889,7 @@ label {
 #page-subscribe-form {
   width: 300px;
   margin: 0 auto; }
+  #page-subscribe-form .gform_confirmation_message {
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
