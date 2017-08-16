@@ -790,7 +790,7 @@ body.modal-open {
 #headerfix {
   height: 90px; }
 
-.home #headerfix, .single #headerfix {
+.home #headerfix, .page-id-8 #headerfix, .single #headerfix, .page #headerfix {
   display: none; }
 
 .home #header #logo {
@@ -1449,8 +1449,7 @@ body.modal-open {
   margin-left: 5px; }
 
 .gform_confirmation_message {
-  font-size: 30px;
-  text-align: center; }
+  font-size: 30px; }
   .gform_confirmation_message h1 {
     font-size: 30px;
     color: white;
@@ -1611,6 +1610,9 @@ label {
         margin-top: 5px; }
         #header #nav li a {
           font-size: 14px; }
+
+  .page #headerfix, .page-id-8 #headerfix {
+    display: block; }
 
   #carrot {
     top: 16px; }
@@ -1886,10 +1888,10 @@ label {
         left: -5px; }
     .flexslider-website .flex-control-nav {
       bottom: -30px; } }
-#page-subscribe-form {
-  width: 300px;
+#page-subscribe-form form {
+  width: 290px;
   margin: 0 auto; }
-  #page-subscribe-form .gform_confirmation_message {
-    text-align: center; }
+#page-subscribe-form .gform_confirmation_message {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

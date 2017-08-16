@@ -395,11 +395,12 @@ body.modal-open{
 	height: 90px;
 }
 
-.home,.single{
+.home,.page-id-8,.single,.page{
 	#headerfix{
 		display: none;
 	}
 }
+
 
 .home{
 	#header #logo{
@@ -407,6 +408,11 @@ body.modal-open{
 	}
 }
 
+// .page-id-8.before{
+// 	#logo{
+// 		display: none;
+// 	}
+// }
 
 #menu-close{
 	position: fixed;
@@ -1358,7 +1364,6 @@ $gutter: 60px;
 	}
 
 	font-size: 30px;
-	text-align: center;
 }
 
 img.gform_ajax_spinner {
@@ -1588,6 +1593,12 @@ label{
 			}
 		}
 
+	}
+
+	.page,.page-id-8{
+		#headerfix{
+			display: block;
+		}
 	}
 
 	#carrot{
