@@ -1,2 +1,5 @@
 .databases/util/
 uploads/
+*.log
+.sass-cache/
+*.css.map
