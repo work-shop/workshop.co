@@ -48,7 +48,7 @@
 					<address>
 						<h3 class="bold uppercase m30 brand">Contact</h3>
 						
-						<h4><a href="mailto:info@workshopri.com" target="_blank" class="dark">info@workshopri.com</a></h4>
+						<h4><a href="mailto:info@workshop.co" target="_blank" class="dark">info@workshop.co</a></h4>
 						<h4>p. 440-915-2393</h4>
 					</address>	
 				</div>
