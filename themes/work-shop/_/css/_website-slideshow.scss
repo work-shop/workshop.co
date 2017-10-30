@@ -46,11 +46,11 @@
 				width: 11px;
 				height: 11px;
 				background: $light;	
-				border: 1px solid $dark;	
+				border: 2px solid $brand;	
 				@include border-radius(30px);
 
 				&.flex-active{
-					background: $dark;			
+					background: $brand;			
 				}	
 			}
 		}
@@ -69,7 +69,7 @@
 
 		.icon:before{
 			font-size: 60px;
-			color: $dark;
+			color: $brand;
 			@include text-shadow(0,0,0,$light);
 		}
 
