@@ -45,7 +45,7 @@
 
 					<?php 
 					$hero_image 			= get_field('project_hero_image');
-					$hero_image_url 		= ($hero_image) ? $hero_image['sizes']['slideshow'] : NULL; 
+					$hero_image_url 		= ($hero_image) ? $hero_image['sizes']['full'] : NULL; 
 					$hero_image_alt 		= ($hero_image) ? $hero_image['alt'] : NULL; ?>
 
 					<img src="<?php echo $hero_image_url; ?>" alt="<?php echo $hero_image_alt; ?>" />
@@ -58,7 +58,7 @@
 					$video_ogg = get_field('project_hero_video_ogg');
 					$full = get_field('hero_video_size'); 
 					$hero_image 			= get_field('project_hero_image');
-					$hero_image_url 		= ($hero_image) ? $hero_image['sizes']['slideshow'] : NULL;
+					$hero_image_url 		= ($hero_image) ? $hero_image['sizes']['full'] : NULL;
 
 					if($full){ ?>
 
