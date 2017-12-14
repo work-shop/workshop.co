@@ -25,157 +25,167 @@
 							function( $cb_img ) {
 								return '<li><img type="'.$cb_img[ 'mime_type' ].'" src="'.$cb_img['sizes']['slideshow-project'].'" /></li>';
 							}
-							);
+						);
 
-							?>
-						</ul>
+						?>
+					</ul>
 
-						<div class="flexslider-full-controls flexslider-controls"></div> 
-						<div id="previous-home" class="flexslider-full-direction flexslider-direction previous flex-previous">
-							<span class="icon" data-icon="&#8216;"></span>
-						</div>
-
-						<div id="next-1" class="flexslider-full-direction next flexslider-direction flex-next">
-							<span class="icon" data-icon="&#8212;"></span>
-						</div>
+					<div class="flexslider-full-controls flexslider-controls"></div> 
+					<div id="previous-home" class="flexslider-full-direction flexslider-direction previous flex-previous">
+						<span class="icon" data-icon="&#8216;"></span>
 					</div>
 
-					<?php break;				
-					case 'image': ?>
+					<div id="next-1" class="flexslider-full-direction next flexslider-direction flex-next">
+						<span class="icon" data-icon="&#8212;"></span>
+					</div>
+				</div>
 
-					<?php 
-					$hero_image 			= get_field('project_hero_image');
-					$hero_image_url 		= ($hero_image) ? $hero_image['url'] : NULL; 
-					$hero_image_alt 		= ($hero_image) ? $hero_image['alt'] : NULL; ?>
+				<?php break;				
+				case 'image': ?>
 
-					<img src="<?php echo $hero_image_url; ?>" alt="<?php echo $hero_image_alt; ?>" />
+				<?php 
+				$hero_image 			= get_field('project_hero_image');
+				$hero_image_url 		= ($hero_image) ? $hero_image['url'] : NULL; 
+				$hero_image_alt 		= ($hero_image) ? $hero_image['alt'] : NULL; ?>
 
-					<?php break;				
-					case 'video': ?>
+				<img src="<?php echo $hero_image_url; ?>" alt="<?php echo $hero_image_alt; ?>" />
 
-					<?php 
-					$video = get_field('project_hero_video');
-					$video_ogg = get_field('project_hero_video_ogg');
-					$full = get_field('hero_video_size'); 
-					$hero_image 			= get_field('project_hero_image');
-					$hero_image_url 		= ($hero_image) ? $hero_image['url'] : NULL;
+				<?php break;				
+				case 'video': ?>
 
-					if($full){ ?>
+				<?php 
+				$video = get_field('project_hero_video');
+				$video_ogg = get_field('project_hero_video_ogg');
+				$full = get_field('hero_video_size'); 
+				$hero_image 			= get_field('project_hero_image');
+				$hero_image_url 		= ($hero_image) ? $hero_image['url'] : NULL;
 
-					<video class="video-full" autoplay="autoplay" loop poster="<?php echo $hero_image_url; ?>">
-						<source src="<?php echo $video; ?>" type="video/mp4">							
-							<source src="<?php echo $video_ogg; ?>" type="video/webm">							
-							</video>
+				if($full){ ?>
 
-							<?php } else{ ?>
+				<video class="video-full" autoplay="autoplay" loop poster="<?php echo $hero_image_url; ?>">
+					<source src="<?php echo $video; ?>" type="video/mp4">							
+						<source src="<?php echo $video_ogg; ?>" type="video/webm">							
+						</video>
 
-							<div class="row">
-								<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-									<video class="padded" autoplay="autoplay" loop poster="<?php echo $hero_image_url; ?>">
-										<source src="<?php echo $video; ?>" type="video/mp4">
-											<source src="<?php echo $video_ogg; ?>">							
-											</video>
-										</div>
+						<?php } else{ ?>
+
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+								<video class="padded" autoplay="autoplay" loop poster="<?php echo $hero_image_url; ?>">
+									<source src="<?php echo $video; ?>" type="video/mp4">
+										<source src="<?php echo $video_ogg; ?>">							
+										</video>
 									</div>
-
-									<?php } ?>
-
-									<?php break;				
-								} ?>
-
-							</div>
-						</section>
-
-						<section id="project-overview" class="project-overview overview block bg-light <?php if(get_field('project_stories')): echo 'has-stories'; else: echo 'no-stories'; endif; ?>">
-
-							<?php
-							$client 			= get_field('project_client');
-							$client_link 		= get_field('project_client_link');
-
-							$location 			= get_field('project_location');
-							$date 				= get_field('project_date');
-							$project_link 		= get_field('project_link');
-
-							$collaborators 		= get_field('project_collaborators');
-							$scope_tags 		= get_field('project_scope_tags');
-
-							$what_we_did		= get_field('project_what_we_did');
-							$intro 				= get_field('project_introductory_paragraph');
-							$bg_image			= get_field('project_background_image');
-
-							?>
-
-							<div class="block-background">
-								<?php echo ws_ifdef_do( $bg_image, ws_decide_image_type( $bg_image ) ); ?>
-							</div>
-
-							<div class="container project-header">
-								<div class="row">
-									<div class="col-sm-12">
-										<h2 class=" project-title centered"><?php echo $title; ?></h2>
-										<h4 class=" project-scope centered">
-											<?php echo ws_split_array_by_key( 
-												$scope_tags, ", ", 
-												function( $cb_elem ) {
-													return $cb_elem['scope_tag']->name;
-												}); ?>
-											</h4>														
-										</div>
-									</div>			
 								</div>
 
-								<div class="container project-metadata">
-									<div class="row">
-										<div class="col-sm-5 col-md-3 metadata">
+								<?php } ?>
 
-											<?php 
-											if ( $client || $location || $date || $project_link || $collaborators || $scope_tags ) :
+								<?php break; ?>
 
-												echo '<ul class="">';
+								<?php case 'vimeo': ?>
+
+								<?php 
+								$vimeo = get_field('project_hero_vimeo'); ?>
+
+								<iframe src="https://player.vimeo.com/video/247336738?autoplay=1&title=0&byline=0&portrait=0" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+								<?php break;
+
+							} ?>
+
+						</div>
+					</section>
+
+					<section id="project-overview" class="project-overview overview block bg-light <?php if(get_field('project_stories')): echo 'has-stories'; else: echo 'no-stories'; endif; ?>">
+
+						<?php
+						$client 			= get_field('project_client');
+						$client_link 		= get_field('project_client_link');
+
+						$location 			= get_field('project_location');
+						$date 				= get_field('project_date');
+						$project_link 		= get_field('project_link');
+
+						$collaborators 		= get_field('project_collaborators');
+						$scope_tags 		= get_field('project_scope_tags');
+
+						$what_we_did		= get_field('project_what_we_did');
+						$intro 				= get_field('project_introductory_paragraph');
+						$bg_image			= get_field('project_background_image');
+
+						?>
+
+						<div class="block-background">
+							<?php echo ws_ifdef_do( $bg_image, ws_decide_image_type( $bg_image ) ); ?>
+						</div>
+
+						<div class="container project-header">
+							<div class="row">
+								<div class="col-sm-12">
+									<h2 class=" project-title centered"><?php echo $title; ?></h2>
+									<h4 class=" project-scope centered">
+										<?php echo ws_split_array_by_key( 
+											$scope_tags, ", ", 
+											function( $cb_elem ) {
+												return $cb_elem['scope_tag']->name;
+											}); ?>
+										</h4>														
+									</div>
+								</div>			
+							</div>
+
+							<div class="container project-metadata">
+								<div class="row">
+									<div class="col-sm-5 col-md-3 metadata">
+
+										<?php 
+										if ( $client || $location || $date || $project_link || $collaborators || $scope_tags ) :
+
+											echo '<ul class="">';
 
 													// conditionally echos a project completion date
-													echo ws_ifdef_do( $date,'<li>' . $date . '</li>' );
+											echo ws_ifdef_do( $date,'<li>' . $date . '</li>' );
 
 													// conditionally echos a linked client ( or just a client )
-													echo ws_ifdef_do( $client, ws_ifdef_do_else( 
-														$client_link, 
-														'<li>Client: <a href="'.ws_decide_link_type( $client_link ).'" target="_blank">'.$client.'</a></li>',
-														'<li>'.$client.'</li>'
-														) );
+											echo ws_ifdef_do( $client, ws_ifdef_do_else( 
+												$client_link, 
+												'<li>Client: <a href="'.ws_decide_link_type( $client_link ).'" target="_blank">'.$client.'</a></li>',
+												'<li>'.$client.'</li>'
+											) );
 
 													// conditionally echos a location
 													//echo ws_ifdef_do( $location,'<li>' . $location . '</li>' );
 
 													// conditionally outputs a ul of comma-separated scope-tags
-													echo ws_ifdef_do( $scope_tags,
-														ws_ifdef_concat( 
-															'<li>Services: ',
-															ws_split_array_by_key( 
-																$scope_tags, ", ", 
-																function( $cb_elem ) {
-																	return $cb_elem['scope_tag']->name;
-																}), 
-															"</li>"
-															));
+											echo ws_ifdef_do( $scope_tags,
+												ws_ifdef_concat( 
+													'<li>Services: ',
+													ws_split_array_by_key( 
+														$scope_tags, ", ", 
+														function( $cb_elem ) {
+															return $cb_elem['scope_tag']->name;
+														}), 
+													"</li>"
+												));
 
 													// this outputs a comma-separated list of links. This is NOT currently an html list.
-													echo ws_ifdef_do( $collaborators, 
-														ws_ifdef_concat( 
-															"<li>Collaborators: ",
-															ws_split_array_by_key( 
-																$collaborators, ", ", 
-																function( $cb_elem ) {
-																	return ws_ifdef_do_else(
-																		$cb_elem['collaborator_link'],
-																		'<a class="underline" href="'.ws_decide_link_type($cb_elem['collaborator_link']).'" >'.$cb_elem['collaborator_name'].'</a>',
-																		$cb_elem['collaborator_name']
-																		); 
-																}), 
-															"</li>"
-															));
+											echo ws_ifdef_do( $collaborators, 
+												ws_ifdef_concat( 
+													"<li>Collaborators: ",
+													ws_split_array_by_key( 
+														$collaborators, ", ", 
+														function( $cb_elem ) {
+															return ws_ifdef_do_else(
+																$cb_elem['collaborator_link'],
+																'<a class="underline" href="'.ws_decide_link_type($cb_elem['collaborator_link']).'" >'.$cb_elem['collaborator_name'].'</a>',
+																$cb_elem['collaborator_name']
+															); 
+														}), 
+													"</li>"
+												));
 
 													// this outputs an external link to more information about this project
-													echo ws_ifdef_concat( '<li class="project-link-item"><a href="',ws_decide_link_type( $project_link ),'" target="_blank" class="project-link"> Visit ' . $project_link . '</a></li>' );
+											echo ws_ifdef_concat( '<li class="project-link-item"><a href="',ws_decide_link_type( $project_link ),'" target="_blank" class="project-link"> Visit ' . $project_link . '</a></li>' );
 
 											echo '</ul>';
 
@@ -207,24 +217,24 @@
 							foreach ( ( $stories ) ? $stories : array() as $key => $story ) :
 
 								$story_title_slug = ws_derive_story_title( $story );
-							$story_classes = $story['project_story_classes'];
-							$story_style_background_image = $story['project_story_background_image']['sizes']['slideshow'];
-							$story_style_background_color = $story['project_story_background_color'];
-							$story_is_container = $story['is_container'];
-							$story_content = $story['project_story_content'];
+								$story_classes = $story['project_story_classes'];
+								$story_style_background_image = $story['project_story_background_image']['sizes']['slideshow'];
+								$story_style_background_color = $story['project_story_background_color'];
+								$story_is_container = $story['is_container'];
+								$story_content = $story['project_story_content'];
 
-							$sidebar_accumulator .= '<li><a href="#'.$story_title_slug.'">'.$story['project_story_name'].'</a></li>'; 
-							?>
+								$sidebar_accumulator .= '<li><a href="#'.$story_title_slug.'">'.$story['project_story_name'].'</a></li>'; 
+								?>
 
-							<section id="<?php echo $story_title_slug; ?>" class="story block bg-light <?php echo $story_classes; ?> story-<?php echo $story_title_slug; ?>  ">
+								<section id="<?php echo $story_title_slug; ?>" class="story block bg-light <?php echo $story_classes; ?> story-<?php echo $story_title_slug; ?>  ">
 
-								<?php
-								if(!$story_is_container){
-									echo ws_ifdef_concat(
-										'<div class="block-background" style="',
-										ws_ifdef_do($story_style_background_image, 'background-image:url('.$story_style_background_image.');' )
-										.ws_ifdef_do($story_style_background_color, 'background-color:'.$story_style_background_color.';' ),
-										'" ></div>'
+									<?php
+									if(!$story_is_container){
+										echo ws_ifdef_concat(
+											'<div class="block-background" style="',
+											ws_ifdef_do($story_style_background_image, 'background-image:url('.$story_style_background_image.');' )
+											.ws_ifdef_do($story_style_background_color, 'background-color:'.$story_style_background_color.';' ),
+											'" ></div>'
 										);
 
 									} else{ ?>
@@ -262,29 +272,29 @@
 															function( $cb_img ) {
 																return '<li><img type="'.$cb_img[ 'mime_type' ].'" src="'.$cb_img['sizes']['project'].'" /></li>';
 															}
-															);
+														);
 
-															?>
-														</ul>
-														<div class="flexslider-end-controls flexslider-controls"></div>
-														<div id="previous-project-end-slideshow" class="flexslider-direction flex-end-previous previous flex-previous">
-															<span class="icon" data-icon="&#8216;"></span>
-														</div>
-														<div id="next-project-end-slideshow" class="flexslider-direction next flex-end-next flex-next">
-															<span class="icon" data-icon="&#8212;"></span>
-														</div>
+														?>
+													</ul>
+													<div class="flexslider-end-controls flexslider-controls"></div>
+													<div id="previous-project-end-slideshow" class="flexslider-direction flex-end-previous previous flex-previous">
+														<span class="icon" data-icon="&#8216;"></span>
+													</div>
+													<div id="next-project-end-slideshow" class="flexslider-direction next flex-end-next flex-next">
+														<span class="icon" data-icon="&#8212;"></span>
 													</div>
 												</div>
 											</div>
 										</div>
-									</section>
+									</div>
+								</section>
 
-								<?php endif; ?>
+							<?php endif; ?>
 
-								<?php get_template_part('partials/inquiry_button') ?>
+							<?php get_template_part('partials/inquiry_button') ?>
 
-								<?php get_template_part('edit','button') ?>
-							</div>
+							<?php get_template_part('edit','button') ?>
+						</div>
 
-							<?php get_template_part('related'); ?>
-							<?php get_footer(); ?>
+						<?php get_template_part('related'); ?>
+						<?php get_footer(); ?>
