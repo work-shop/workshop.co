@@ -87,7 +87,7 @@
 								<?php 
 								$vimeo = get_field('project_hero_vimeo'); ?>
 
-								<iframe src="https://player.vimeo.com/video/247336738?autoplay=1&title=0&byline=0&portrait=0" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								<iframe src="https://player.vimeo.com/video/<?php echo $vimeo; ?>?autoplay=1&title=0&byline=0&portrait=0" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 								<?php break;
 
