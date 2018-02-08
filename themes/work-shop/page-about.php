@@ -202,14 +202,15 @@
 					$current .= '<div class="'.ws_parity( $current_i, 'left-side', 'right-side')
 							 .  (($current_i == 0) ? " col-sm-offset-2 " : " col-sm-offset-0")
 							 .  ' col-sm-3 person">'
-							 .  ws_ifdef_concat('<a href="',ws_decide_link_type($person['person_link']),'" target="_blank">')
+							 //.  ws_ifdef_concat('<a href="',ws_decide_link_type($person['person_link']),'" target="_blank">')
 						     .  '<img class="m1" src="'.$person['person_image']['sizes']['person'].'">'
 						     .  ws_ifdef_concat( '<h3 class="bold brand m1">',$person['person_name'],'<br/> ' )
 						     .  ws_ifdef_concat( '',$person['person_role'],'</h3>' )
 						     .  ws_ifdef_concat( '<h5>',$person['people_bio'],'</h5>')						     
 						     .  ws_ifdef_concat( '<h5>',$person['person_phone_number'],'</h5>' )
-						     .  ws_ifdef_concat( '<h4>',$person['person_email'],'</h4>' )
-						     .  ws_ifdef_do($person['person_link'], '</a>')
+						     //.  ws_ifdef_do($person['person_link'], '</a>')
+						     .  ws_ifdef_concat( '<h4><a href="mailto:',$person['person_email'],'" target="_blank">' )
+						     .  ws_ifdef_concat( '',$person['person_email'],'</a></h4>' )
 						     .  '</div>';
 
 					//if ( $current_i % 2 == 1 || $current_i == $total_current - 1 ) $current .= $row_separator_close;

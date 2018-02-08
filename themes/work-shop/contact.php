@@ -49,7 +49,7 @@
 						<h3 class="bold uppercase m30 brand">Contact</h3>
 						
 						<h4><a href="mailto:info@workshop.co" target="_blank" class="dark">info@workshop.co</a></h4>
-						<h4>p. 440-915-2393</h4>
+						<h4>p. 401.751.3402</h4>
 					</address>	
 				</div>
 			
@@ -66,7 +66,6 @@
 					<address>
 						<h3 class="uppercase bold m30 brand">Shop</h3>
 											
-						<h4 class="brand">We've moved!</h4>					
 						<h4>160 Narragansett Ave, Unit 2</h4>
 						<h4>Providence, RI 02907</h4>						
 					</address>					
