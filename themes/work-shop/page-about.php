@@ -4,13 +4,17 @@
 <div id="about" class="template about">	
 
 
-	<section id="about-introduction" class="about-introduction introduction block bg-brand sixty crop padded">	
+	<section id="about-introduction" class="about-introduction introduction block bg-brand seventy padded">	
 		
 		<div class="container">
 			<div class="row">			
 				<div class="col-sm-10 col-sm-offset-2">
 
-				<h1 class=" about-tagline white">Work-Shop is an interdisciplinary <br/>design studio comprised of designers, makers, thinkers, and creative technologists. </h1>	
+				<h1 class=" about-tagline white hidden">Work-Shop is an interdisciplinary <br/>design studio comprised of designers, makers, thinkers, and creative technologists. </h1>	
+
+				<h2 class="white about-tagline-new">
+				Work-Shop is a multidisciplinary design studio in Providence. We partner with clients to help them solve complex creative problems. Our projects integrate brand, digital, interior, and experience design — creating cohesive and impactful results that propel organizations forward. Our clients Include the Smithsonian Institution, Harvard, MIT, Brown, the Newport Art Museum, as well as a wide variety of Rhode Island based small businesses and non-profits. Work-Shop is an alumnus of the Goldman Sach's 10,000 Small Businesses Program, and has received the Design Catalyst Grant from DESIGNxRI, the Design Innovation Grant from RISCA, and the Creative Mile Award from the 195 Commission.
+				</h2>
 
 				</div>
 			</div>
@@ -77,21 +81,25 @@
 		
 				<div class="col-sm-6 col-sm-offset-2">
 
-					<h4 class="uppercase m0 bold">Strategy</h4>
-					<h3 class="m2">We investigate each problem and research solutions, <br /> foundational ideas, and concepts with our clients. 
-</h3>
+					<h4 class="uppercase m0 bold">Learn</h4>
+					<h3 class="m2">
+							We learn about our clients mission, goals, and vision so we can deeply understand and clarify the problems we'll be solving.
+					</h3>
 	
-					<h4 class="uppercase m0 bold">Design</h4>
-					<h3 class="m2">From that research, we create holistic designs that are functional, meaningful, and solve the core problems of the project. 
-</h3>
+					<h4 class="uppercase m0 bold">Strategize</h4>
+					<h3 class="m2">
+						We investigate each problem and research solutions, <br /> foundational ideas, and concepts - through close collaboration with our clients. 
+					</h3>
 					
-					<h4 class="uppercase m0 bold">Making</h4>					
-					<h3 class="m2">We design everything we make, and make everything we design. Blending design and making builds a leaner and more cohesive process. 
-</h3>
+					<h4 class="uppercase m0 bold">Design</h4>					
+					<h3 class="m2">
+						We create holistic designs that are functional, meaningful, and solve the core problems of the project. 
+					</h3>
 					
-					<h4 class="uppercase m0 bold">Evolution</h4>
-					<h3 class="m2">Successful projects need continued consideration and care. We stay involved to make sure the project blossoms and stays healthy.
-</h3>															
+					<h4 class="uppercase m0 bold">Evolve</h4>
+					<h3 class="m2">
+						Successful projects need continued consideration and care. We stay involved to make sure the project blossoms and stays healthy.
+					</h3>															
 				</div>
 				
 			</div>

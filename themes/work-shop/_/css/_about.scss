@@ -1,0 +1,16 @@
+
+
+.about-tagline-new{
+	line-height: 1.6;
+	font-size: 29px;
+	margin-top: 0;
+	@extend .bold;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 24px;
+	}
+
+	@media screen and (max-width: 767px) {
+		font-size: 21px;
+	}
+}

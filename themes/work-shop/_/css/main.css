@@ -545,7 +545,7 @@ ol, ul {
 .regular, .filters .button {
   font-family: 'Apercu-Regular','Apercu',Helvetica, Arial, Sans-Serif; }
 
-.bold, #current-title, .inquiry-button h3, .inquiry-button h4 {
+.bold, #current-title, .inquiry-button h3, .inquiry-button h4, .about-tagline-new {
   font-style: normal;
   font-family: 'Apercu-Bold','Apercu',Helvetica, Arial, Sans-Serif; }
 
@@ -698,7 +698,7 @@ h5, h6 {
     top: 0;
     left: 0;
     z-index: 2;
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
     transition: all 0.5s 0s ease;
     -moz-transition: all 0.5s 0s ease;
     -webkit-transition: all 0.5s 0s ease;
@@ -1896,5 +1896,16 @@ label {
   background: black; }
   .hero.hero-vimeo iframe {
     height: calc(90vh - 40px); }
+
+.about-tagline-new {
+  line-height: 1.6;
+  font-size: 29px;
+  margin-top: 0; }
+  @media screen and (max-width: 1024px) {
+    .about-tagline-new {
+      font-size: 24px; } }
+  @media screen and (max-width: 767px) {
+    .about-tagline-new {
+      font-size: 21px; } }
 
 /*# sourceMappingURL=main.css.map */
