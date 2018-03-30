@@ -62,7 +62,7 @@
 
 				if($full){ ?>
 
-				<video class="video-full" autoplay="autoplay" loop poster="<?php echo $hero_image_url; ?>">
+				<video class="video-full" autoplay playsinline loop poster="<?php echo $hero_image_url; ?>">
 					<source src="<?php echo $video; ?>" type="video/mp4">							
 						<source src="<?php echo $video_ogg; ?>" type="video/webm">							
 						</video>
