@@ -71,7 +71,7 @@
 
 						<div class="row">
 							<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-								<video class="padded" autoplay="autoplay" loop poster="<?php echo $hero_image_url; ?>">
+								<video class="padded" autoplay muted playsinline loop poster="<?php echo $hero_image_url; ?>">
 									<source src="<?php echo $video; ?>" type="video/mp4">
 										<source src="<?php echo $video_ogg; ?>">							
 										</video>
