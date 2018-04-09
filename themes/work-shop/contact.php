@@ -39,7 +39,7 @@
 						<h4><a href="<?php bloginfo('url'); ?>/about" target="_blank" class="dark">About</a></h4>				
 						<h4><a href="http://facebook.com/workshopri" target="_blank" class="dark">Facebook</a></h4>				
 						<h4><a href="http://instagram.com/workshop.design.studio" target="_blank" class="dark">Instagram</a></h4>
-						<h4 class=""><a href="<?php bloginfo('url'); ?>/jobs" target="_blank" class="dark">Jobs</a></h4>
+						<h4 class=""><a href="<?php bloginfo('url'); ?>/jobs" class="dark">Jobs</a></h4>
 						<h4 class="hidden"><a href="<?php bloginfo('url'); ?>/current" target="_blank" class="dark">Current</a></h4>
 					</address>	
 				</div>
