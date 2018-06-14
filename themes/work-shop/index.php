@@ -30,7 +30,7 @@
 			</h1>		
 
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 slide-right">
+				<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 slide-right hidden">
 					<a href="<?php bloginfo('url');?>/apprenticeship" class="button bold centered margin uppercase">2018 Summer Apprenticeship Program</a>
 				</div>				
 			</div>
