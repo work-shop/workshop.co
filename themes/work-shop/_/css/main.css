@@ -1445,10 +1445,10 @@ input[type="checkbox"], input[type="radio"] {
   font-weight: bold;
   font-size: 11px;
   padding: 5px 0; }
-.gform_wrapper .gfield_checkbox label {
+.gform_wrapper .gfield_checkbox label, .gform_wrapper .ginput_container_radio label {
   display: inline;
   max-width: none; }
-.gform_wrapper .gfield_checkbox li {
+.gform_wrapper .gfield_checkbox li, .gform_wrapper .ginput_container_radio li {
   margin-bottom: 5px; }
 .gform_wrapper .gfield_required {
   color: #f79941;
