@@ -1225,7 +1225,12 @@ $gutter: 60px;
 
 		input[type="submit"]{
 			background: white
+		}
+	}
 
+	.ginput_container_radio{
+		li{
+			margin-bottom: .5em;
 		}
 	}
 
@@ -1234,6 +1239,11 @@ $gutter: 60px;
 		visibility: visible;
 		display: block;
 	}
+}
+
+input[type="checkbox"], input[type="radio"]{
+	display: inline-block;
+	width: 40px;
 }
 
 /********** $FOOTER *********/

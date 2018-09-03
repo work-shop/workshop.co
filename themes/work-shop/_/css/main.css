@@ -1368,10 +1368,16 @@ body.modal-open {
     color: #333; }
   .invitation-form .gform_wrapper input[type="submit"] {
     background: white; }
+  .invitation-form .ginput_container_radio li {
+    margin-bottom: .5em; }
   .invitation-form.open {
     left: 0;
     visibility: visible;
     display: block; }
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline-block;
+  width: 40px; }
 
 /********** $FOOTER *********/
 .home #contact {
