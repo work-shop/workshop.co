@@ -209,12 +209,14 @@
 
 					<div class="col-sm-10 col-sm-offset-2">
 						<div class="row">
-							<div class="col-sm-5">
+							<div class="col-sm-3">
 								<img class="m1" src="<?php echo $person['person_image']['sizes']['person']; ?>">
 							</div>
 							<div class="col-sm-5 col-sm-offset-1">
 								<h3 class="bold brand m1"><?php echo $person['person_name']; ?>
-								<br/> 
+								<br/>
+								 <?php echo $person['person_role']; ?>
+								<h3>
 								<h4>
 									<a href="mailto:<?php echo $person['person_email']; ?>" target="_blank">
 										<?php echo $person['person_email']; ?>
