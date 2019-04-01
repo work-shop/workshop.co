@@ -207,7 +207,7 @@
 
 					?>
 
-					<div class="col-sm-12">
+					<div class="col-sm-10 col-sm-offset-2">
 						<div class="row">
 							<div class="col-sm-5">
 								<img class="m1" src="<?php echo $person['person_image']['sizes']['person']; ?>">
@@ -268,8 +268,8 @@
 				}
 			}
 
-			echo $current . '</div>';
-			echo $former . '</div>';
+			//echo $current . '</div>';
+			//echo $former . '</div>';
 
 			echo ws_ifdef_concat('<div>',$postpeople,'</div>');
 
