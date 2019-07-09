@@ -4,7 +4,6 @@
 		<div class="row grid" id="grid">
 
 			<?php
-
 			if( is_tax() ){
 				$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); 
 				$tax_query = array(

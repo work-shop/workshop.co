@@ -13,7 +13,7 @@
 					<h1 class=" about-tagline white hidden">Work-Shop is an interdisciplinary <br/>design studio comprised of designers, makers, thinkers, and creative technologists. </h1>	
 
 					<h2 class="white about-tagline-new">
-						Work-Shop is a multidisciplinary design studio in Providence. We partner with clients to help them solve complex creative problems. Our projects integrate brand, digital, interior, and experience design — creating cohesive and impactful results that propel organizations forward. Our clients Include the Smithsonian Institution, Harvard, MIT, Brown, the Newport Art Museum, as well as a wide variety of Rhode Island based small businesses and non-profits. Work-Shop is an alumnus of the Goldman Sach's 10,000 Small Businesses Program, and has received the Design Catalyst Grant from DESIGNxRI, the Design Innovation Grant from RISCA, and the Creative Mile Award from the 195 Commission.
+						Work-Shop is a multidisciplinary design studio in Providence. We partner with clients to help them solve complex creative problems. Our projects integrate brand, digital, and experience design — creating cohesive and impactful results that propel organizations forward. Our clients Include the Smithsonian Institution, Harvard, MIT, Brown, the Newport Art Museum, as well as a wide variety of Rhode Island based small businesses and non-profits. Work-Shop is an alumnus of the Goldman Sach's 10,000 Small Businesses Program, and has received the Design Catalyst Grant from DESIGNxRI, the Design Innovation Grant from RISCA, and the Creative Mile Award from the 195 Commission.
 					</h2>
 
 				</div>
@@ -124,36 +124,29 @@
 				<h3 class="uppercase bold m30">Strategy</h3>
 				<ul>
 					<li><a href="#"><h3>Creative Direction</h3></a></li>
-					<li><a href="#"><h3>Strategic Consulting</h3></a></li>
-					<li><a href="#"><h3>Content Strategy</h3></a></li>
 					<li><a href="#"><h3>Conceptual Design</h3></a></li>
-					<li><a href="#"><h3>Design Engineering</h3></a></li>						
+					<li><a href="#"><h3>Problem Identification</h3></a></li>
+					<li><a href="#"><h3>Content Strategy</h3></a></li>
 				</ul>
 			</div>
 
 			<div class="col-sm-3">
 				<h3 class="uppercase bold m30">Design</h3>
 				<ul>
-					<li><a href="#"><h3>Identity/Brand Design</h3></a></li>
 					<li><a href="#"><h3>Web Design</h3></a></li>
 					<li><a href="#"><h3>User Experience Design</h3></a></li>
+					<li><a href="#"><h3>Identity/Brand Design</h3></a></li>
 					<li><a href="#"><h3>Software Architecture</h3></a></li>
-					<li><a href="#"><h3>Product Design</h3></a></li>
-					<li><a href="#"><h3>Interior Architectural Design</h3></a></li>
-					<li><a href="#"><h3>Furniture Design</h3></a></li>	
-					<li><a href="#"><h3>Installation Design</h3></a></li>					
 				</ul>
 			</div>
 
 			<div class="col-sm-3">
-				<h3 class="uppercase bold m30">Making</h3>
+				<h3 class="uppercase bold m30">Technology</h3>
 				<ul>
 					<li><a href="#"><h3>Web Development</h3></a></li>	
-					<li><a href="#"><h3>iOS Development</h3></a></li>						
-					<li><a href="#"><h3>Software Engineering</h3></a></li>	
-					<li><a href="#"><h3>Furniture Fabrication</h3></a></li>					
-					<li><a href="#"><h3>Digital Fabrication</h3></a></li>
-					<li><a href="#"><h3>Installation Construction</h3></a></li>
+					<li><a href="#"><h3>Mobile app Development</h3></a></li>						
+					<li><a href="#"><h3>Custom Software Engineering</h3></a></li>	
+					<li><a href="#"><h3>Software Integration</h3></a></li>					
 				</ul>
 			</div>
 

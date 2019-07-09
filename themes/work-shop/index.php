@@ -48,9 +48,7 @@
 
 		<div class="vertical-center">
 			<h2 class="centered tagline m30">
-				We design brands, digital,<br/>
-				interiors, furniture, experiences,<br/>
-				and everything in between.
+				Our projects integrate brand,<br/> digital, and experience design —<br/> creating cohesive and impactful results<br/> that propel organizations forward.
 			</h2>	
 
 			<h2 class="centered tagline m30 hidden">Work-Shop is a multidisciplinary<br class="hidden-xs"/> 
@@ -62,7 +60,7 @@
 			
 		</section>	
 
-		<section id="home-spaces" class="home-spaces block full bg-light">	
+		<section id="home-spaces" class="home-spaces block full bg-light hidden">	
 
 			<div class="block-background mask-dark" style="background-image: url('<?php bloginfo('template_directory'); ?>/_/img/home.jpg')">
 			</div>
@@ -150,7 +148,7 @@
 			</section>		
 
 
-			<section id="home-furniture" class="home-furniture block full bg-light">	
+			<section id="home-furniture" class="home-furniture block full bg-light hidden">	
 
 				<div class="block-background mask-dark" style="background-image: url('<?php bloginfo('template_directory'); ?>/_/img/home7.jpg')">	
 				</div>
@@ -237,7 +235,7 @@
 				</section>	
 
 
-				<section id="home-fabrication" class="home-fabrication block full bg-light">	
+				<section id="home-fabrication" class="home-fabrication block full bg-light hidden">	
 
 					<div class="block-background mask-dark" style="background-image: url('<?php bloginfo('template_directory'); ?>/_/img/home2.jpg')">	
 					</div>
@@ -275,7 +273,7 @@
 
 				</section>
 
-				<section id="home-chapel" class="home-chapel block full bg-light">	
+				<section id="home-chapel" class="home-chapel block full bg-light hidden">	
 
 					<div class="block-background mask-light" style="background-image: url('<?php bloginfo('template_directory'); ?>/_/img/chapel.jpg')">	
 					</div>
