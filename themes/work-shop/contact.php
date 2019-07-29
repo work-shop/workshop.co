@@ -49,7 +49,7 @@
 						<h3 class="bold uppercase m30 brand">Contact</h3>
 						
 						<h4><a href="mailto:info@workshop.co" target="_blank" class="dark">info@workshop.co</a></h4>
-						<h4>p. 440.915.2393</h4>
+						<h4>p. 401.751.3402</h4>
 					</address>	
 				</div>
 			
