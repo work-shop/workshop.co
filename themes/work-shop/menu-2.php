@@ -35,9 +35,8 @@
 					<address>	
 						<h4>204 Westminster Street, Floor 3</h4>
 						<h4>Providence, RI 02903</h4>						
-						<h4><a href="mailto:info@workshopri.com" target="_blank">info@workshopri.com</a></h4>
+						<h4><a href="mailto:info@workshop.co" target="_blank">info@workshop.co</a></h4>
 						<h4>p. 440-915-2393</h4>
-						<h4>f. 401-274-1913</h4>						
 					</address>	
 				</div>
 				
